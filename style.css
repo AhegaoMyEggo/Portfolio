@@ -1,3 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+/* HEADER */
 #masthead {
     position: fixed;
     width: 100%;
@@ -6,13 +19,6 @@
     color: white;
     background: lightcoral;
     border-bottom: 5px solid rgb(170, 34, 34);
-}
-
-.container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    clear: both;
 }
 
 nav {
@@ -34,6 +40,7 @@ nav a: first-child {
     border-left: 0 none;
 }
 
+/* MAIN */
 #main-container {
     padding-top: 130px;
 }
@@ -52,6 +59,47 @@ nav a: first-child {
     color: white;
 }
 
+.work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+}
+
+.work:nth-child(even) {
+    margin-right: 40px;
+}
+
+.work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+}
+
+.work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: palegoldenrod;
+    text-align: center;
+    background: black;
+    border-bottom: 0;
+}
+
+.auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+/* SIDEBAR*/
 .sidebar {
     float: right;
     width: 100%;
@@ -76,6 +124,7 @@ h3, .sidebar h2 {
     margin-right: 5px;
 }
 
+/* FOOTER */
 footer {
     padding: 30px 0;
     font-size: 12px;
